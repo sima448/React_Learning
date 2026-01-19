@@ -1,9 +1,10 @@
-function User(props){
-   console.log(props);//props object ke place pe kuchh bhi pass kr skte h
-
+function User({name,age}){
+   
     return (
     <div>
         <h1>User Component</h1>
+        <h1>Name: {name}</h1>
+        <h1>Age: {age}</h1>
         </div>
     );
 }

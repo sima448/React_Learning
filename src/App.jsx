@@ -1,12 +1,20 @@
 import React from "react";
 import User from "./User.jsx";
 function App(){
-  //let name="sima";
+   let fruit="Apple";
+   
+   const changeFruit=()=>{
+    fruit="Mango";
+    console.log(fruit);
+   }
+
+
   return(
     <div>
-      <h1>Event and function call</h1>
-     {/* <h2>hello {name}</h2> */}
-       <User name="sima" age={20}/>
+    <h1>State in React js</h1>
+    <h1>{fruit}</h1>
+    <button onClick={changeFruit}>Change Fruit Name</button>
+    
     </div>
   )
 }
